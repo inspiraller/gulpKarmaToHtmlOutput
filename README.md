@@ -10,7 +10,7 @@ Time lapse: 1 week into 15 mins.
 - vinyl-source-stream
 - phantomjs
 
-## Do not install karma globally. To check go to:
+## You can install karma-cli globally but DO NOT install karma globally. To check go to:
 	C:\Users\[your name]\AppData\Roaming\npm\node_modules
 	 and remove it.
 
