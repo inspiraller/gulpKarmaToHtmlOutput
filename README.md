@@ -4,27 +4,27 @@ How to set up gulp, jasmine, karma, karma-htmlfile-reporter to generate a html f
 Time lapse: 1 week into 15 mins.
 
 
-##Pre-requisites - install the following globally:
+## Pre-requisites - install the following globally:
 - gulp
 - karma-cli
 - vinyl-source-stream
 - phantomjs
 
-##Do not install karma globally. To check go to:
+## Do not install karma globally. To check go to:
 	C:\Users\[your name]\AppData\Roaming\npm\node_modules
 	 and remove it.
 
 
-##change directory to your new project:
-	$ cd to new dir - c:\baps\jsstack\gulpkarma2\
+## change directory to your new project:
+	$ cd to new dir - c:\yourlocationetc\
 
-##create package.json file:
+## create package.json file:
 	$ npm init - to generate own package.json file
 
-##Install npm dependencies:
+## Install npm dependencies:
 	$ npm install gulp karma karma-jasmine karma-phantomjs-launcher karma-htmlfile-reporter --save-dev
 
-##Create your jasmine tests: 
+## Create your jasmine tests: 
 	jasmineSpecTests/spec/helloworld.spec.js
 ```javascript	
 		describe("hello world", function() {
@@ -33,13 +33,13 @@ Time lapse: 1 week into 15 mins.
 			});
 		});
 ```
-##Create web root folder with js:
+## Create web root folder with js:
 	www/lib/somePlugin.js
 		var somePlugin = function(){
 			return 'somePlugin2';
 		};	
 
-##Create Karma file:
+## Create Karma file:
 ```javascript
 	karma.conf.js
 
@@ -84,7 +84,7 @@ Time lapse: 1 week into 15 mins.
 	}
 ```
 
-##Create gulp file:
+## Create gulp file:
 ```javascript
 	var gulp = require('gulp');
 	var KarmaTestServer = require('karma').Server;
@@ -101,9 +101,9 @@ Time lapse: 1 week into 15 mins.
 	gulp.task('test', ['testKarma']);
 ```
 
-##Run tests:
+## Run tests:
 	gulp test
 
-##Output:
-	jasmineSpecTests/spec/helloworld.spec.js
+## Output:
+	jasmineSpecTests/testOutput/units.html
 
