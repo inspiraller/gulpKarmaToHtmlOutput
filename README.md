@@ -3,8 +3,11 @@
 How to set up gulp, jasmine, karma, karma-htmlfile-reporter to generate a html file that looks like jasmine output.
 Time lapse: 1 week into 15 mins.
 
+## Pre-requisites:
+- node
+- npm
 
-## Pre-requisites - install the following globally:
+## Pre-requisites - install the following globally in your node modules folder:
 - gulp
 - karma-cli
 - vinyl-source-stream
